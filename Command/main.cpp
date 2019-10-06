@@ -37,3 +37,13 @@ int main() {
     editor->undo();
     cout << editor->getText() << endl;
 }
+// Output:
+// Source text:
+// Hello, world!
+// After copy-paste:
+// Hello, world!Hello
+// After cut:
+// , world!Hello
+// Undo:
+// Hello, world!Hello
+// Hello, world!
