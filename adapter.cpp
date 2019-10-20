@@ -1,3 +1,5 @@
+/*Адаптер — это структурный паттерн проектирования,
+который позволяет объектам с несовместимыми интерфейсами работать вместе.*/
 #include <iostream>
 #include <memory>
 
@@ -46,7 +48,7 @@ private:
 
 int main()
 {
-    unique_ptr<RectangleAdapter> rectangleAdapter = make_unique<RectangleAdapter>(10,10,50,30);
+    unique_ptr<Rectangle> rectangleAdapter = make_unique<RectangleAdapter>(10,10,50,30);
     rectangleAdapter->draw();
     return 0;
 }
